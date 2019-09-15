@@ -73,6 +73,7 @@ holiday_hash.each do |key, value|
  end
  holiday = final_holiday.join(" ")
  supply = supply.join(" ")
+ puts " #{holiday}: #{supply}"
  end
  end
 end
