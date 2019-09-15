@@ -52,7 +52,7 @@ def all_winter_holiday_supplies(holiday_hash)
   array = holiday_hash[:winter].map do |key, value|
     value
     end
-    array.flatten
+    value.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
