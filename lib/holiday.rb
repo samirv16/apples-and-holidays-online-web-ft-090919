@@ -70,8 +70,9 @@ holiday_hash.each do |key, value|
       final_holiday = []
         array.each do |x|
           final_holiday << x.capitalize!
-   end
-   # binding.pry
+ end
+ end
+ end
  end
 end
 
