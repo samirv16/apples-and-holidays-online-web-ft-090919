@@ -85,16 +85,11 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   
 holiday_hash[:spring][:memorial_day][0]answer = []
-holiday_hash.each do |season, data|
-  data.each do |holiday, value|
-    value.each do |supply|
-     if supply == "BBQ"
-        answer.push(holiday)
-      end
+ holiday_hash.map do |season, holiday|
+    holiday.map do |holiday, supply|
+      holiday if supply.include?("BBQ")
     end
-  end
-end
-answer
+  end.flatten.compact
 end
 
 
